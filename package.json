@@ -42,8 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/lukemaxxie/SegundaPreEntregaReact-Murana.git",
-  "devDependencies": {
+  "homepage": "http://lukemaxxie.github.io/SegundaPreEntregaReact-Murana",  "devDependencies": {
     "gh-pages": "^6.1.0"
   }
 }
