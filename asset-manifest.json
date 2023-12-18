@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lukemaxxie/SegundaPreEntregaReact-Murana.git/static/css/main.3cfa831e.css",
+    "main.js": "/lukemaxxie/SegundaPreEntregaReact-Murana.git/static/js/main.9933a115.js",
+    "index.html": "/lukemaxxie/SegundaPreEntregaReact-Murana.git/index.html",
+    "main.3cfa831e.css.map": "/lukemaxxie/SegundaPreEntregaReact-Murana.git/static/css/main.3cfa831e.css.map",
+    "main.9933a115.js.map": "/lukemaxxie/SegundaPreEntregaReact-Murana.git/static/js/main.9933a115.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cfa831e.css",
+    "static/js/main.9933a115.js"
+  ]
+}
