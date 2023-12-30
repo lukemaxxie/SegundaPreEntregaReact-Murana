@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/SegundaPreEntregaReact-Murana/static/css/main.3cfa831e.css",
-    "main.js": "/SegundaPreEntregaReact-Murana/static/js/main.9933a115.js",
+    "main.css": "/SegundaPreEntregaReact-Murana/static/css/main.c74bfad7.css",
+    "main.js": "/SegundaPreEntregaReact-Murana/static/js/main.46dd7f3f.js",
     "index.html": "/SegundaPreEntregaReact-Murana/index.html",
-    "main.3cfa831e.css.map": "/SegundaPreEntregaReact-Murana/static/css/main.3cfa831e.css.map",
-    "main.9933a115.js.map": "/SegundaPreEntregaReact-Murana/static/js/main.9933a115.js.map"
+    "main.c74bfad7.css.map": "/SegundaPreEntregaReact-Murana/static/css/main.c74bfad7.css.map",
+    "main.46dd7f3f.js.map": "/SegundaPreEntregaReact-Murana/static/js/main.46dd7f3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cfa831e.css",
-    "static/js/main.9933a115.js"
+    "static/css/main.c74bfad7.css",
+    "static/js/main.46dd7f3f.js"
   ]
 }
