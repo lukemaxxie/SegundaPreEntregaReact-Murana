@@ -7,30 +7,32 @@
     align-items: center;
     padding: 1rem; 
     background-color: rgb(255, 255, 255); 
+          z-index: 1;
   }
   .active {
-    color: #ff6347; /* Change the text color */
-    background-color: #f8f9fa; /* Change the background color */
+    color: #007838; /* Change the text color */
+    background-color: #ffffff; /* Change the background color */
     font-weight: bold; /* Make the text bold */
   }
 .graffiti-text {
   font-family: 'Bungee Spice', sans-serif; 
   font-size: 5rem;
 justify-content: center;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  margin-right: 1rem;
   color: rgb(13, 5, 5); 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
-
-.nav-categories {
-  display: flex;
-}
-
 .category {
   margin-right: 20px;
-  transition: color 0.3s ease, background-color 0.3s ease; /* Add this line */
+  font-size: 1.5rem;
+  color: #007838; /* Change the color to whatever you prefer */
 }
 
 .category:hover {
-  color: #008080; /* Change the text color */
-  background-color: #f0f8ff; /* Change the background color */
+  color: #82dead;
 }

@@ -1,27 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { products } from './ProductData';
 import ProductItem from './ProductItem';
-import { getProducts } from './async-mocks'; // Asegúrate de que esta importación sea correcta
+
 
 const ProductList = () => {
-  const { categoryId } = useParams(); // Extrae categoryId de los parámetros de la ruta
-  const [products, setProducts] = useState([]);
+  const { idCategory } = useParams();
+  const filteredProducts = products.filter(product => product.category === idCategory);
 
-  useEffect(() => {
-    getProducts(categoryId).then((products) => {
-      setProducts(products);
-    });
-  }, [categoryId]); 
   return (
     <div>
-      {products.map(product => (
-        <ProductItem 
-          key={product.id}
-          name={product.name}
-          price={product.price}
-          image={product.image}
-          description={product.description}
-        />
+      {filteredProducts.map(product => (
+        <Link to={`/item/${product.id}`} key={product.id}>
+          <ProductItem 
+            name={product.name}
+            price={product.price}
+            image={product.image}
+            description={product.description}
+          />
+        </Link>
       ))}
     </div>
   );

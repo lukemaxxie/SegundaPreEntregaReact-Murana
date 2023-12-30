@@ -1,22 +1,29 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import '../NavBar/Navbar.css';
 import CartWidget from '../CartWidget';
-import { CartContext } from '../CartContext'; // import your CartContext
+import { CartContext } from '../CartContext';
 
+const ROUTES = [
+  { path: "/category/interior", name: "Interior" },
+  { path: "/category/exterior", name: "Exterior" },
+  {path: "/pages/CalculaTuPresupuesto", name: "Calcula tu presupuesto"},
+  {path: "pages/QuienesSomos", name: "Quienes Somos"},
+]; 
 const Navbar = () => {
-  const { cartItems } = useContext(CartContext); // access cartItems from CartContext
+  const { cartItems } = useContext(CartContext); 
 
   return (
     <nav className="navbar">
-      <h1 className="graffiti-text">Pachamama Eventos</h1>
+      <NavLink to="/"><h1 className="graffiti-text">Pachamama Eventos</h1></NavLink>
       <div className="nav-categories">
-        <NavLink className="category" activeClassName="active" to="/nuestros-servicios">Nuestros Servicios</NavLink>
-        <NavLink className="category" activeClassName="active" to="/calcula-tu-presupuesto">Calcula Tu Presupuesto</NavLink>
-        <NavLink className="category" activeClassName="active" to="/quienes-somos">Quienes Somos</NavLink>
+        {ROUTES.map(route => (
+          <NavLink key={route.path} className="category" activeClassName="active" to={route.path}>
+            {route.name}
+          </NavLink>
+        ))}
       </div>
-      <CartWidget cartItemCount={cartItems.length} /> {/* pass the count of cartItems to CartWidget */}
+      <CartWidget cartItemCount={cartItems.length} />
     </nav>
   );
 };

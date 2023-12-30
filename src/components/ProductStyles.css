@@ -1,31 +1,39 @@
 .product-item {
+  position: relative;
+  z-index: 1;
   border: 1px solid #765a5a;
   margin: 5px;
-  padding: px;
-  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+  padding: 0px; /* Corrected from 'px' to '0px' */
+  transition: background-color 0.3s ease;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the content horizontally */
-  text-align: center; /* Center the text horizontally */
+  align-items: center;
+  text-align: center;
 }
 
 .product-item:hover {
-  background-color: #f5f5f5; /* Change background color on hover */
+  background-color: #f5f5f5;
+}
+
+.description {
+  position: relative; /* Add this line */
+  z-index: 2;
 }
 
 .product-item img {
-  width: 200px; /* Adjust the width of the image */
-  height: auto; /* Maintain the aspect ratio */
+  width: 200px;
+  height: auto;
   object-fit: cover;
 }
 
 .product-item h2 {
   font-size: 1.5em;
-  margin-top: 10px; /* Add margin to separate the title from the image */
+  margin-top: 10px;
 }
 
 .product-item p {
-  color: #333;
+  color: #000000;
+  font-weight: bold; /* Corrected from 'font-style' to 'font-weight' */
 }
 
 .product-list {
@@ -35,9 +43,22 @@
 }
 
 .product-item-wrapper {
-  /* Add your styles here. For example: */
   margin: 10px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #407651;
+  z-index: 0;
+}
+
+.product-name {
+  color: #000000;
 }
